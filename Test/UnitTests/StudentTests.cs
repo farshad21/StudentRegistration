@@ -42,7 +42,23 @@ namespace Test.UnitTests
             Assert.NotEqual(firstCode, secondCode);
             Assert.Equal(10, firstCode.Length);
             Assert.Equal(10, secondCode.Length);
+
+            private static HashSet<string> GeneratedCodes = new HashSet<string>();
+
+        private string GenerateStudentCode()
+        {
+            string code;
+            do
+            {
+                // تولید یک کد ۱۰ رقمی تصادفی
+                code = new Random().Next(1000000000, int.MaxValue).ToString().PadLeft(10, '0').Substring(0, 10);
+            } while (GeneratedCodes.Contains(code));
+
+            GeneratedCodes.Add(code);
+            return code;
         }
 
     }
+
+}
 }
