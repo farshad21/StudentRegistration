@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\farsh\\Desktop\\Git\\StudentRegistration\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{613507EA-D12F-4219-A582-64E23D8BA95F}|Service\\Service.csproj|c:\\users\\farsh\\desktop\\git\\studentregistration\\service\\service\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{613507EA-D12F-4219-A582-64E23D8BA95F}|Service\\Service.csproj|solutionrelative:service\\service\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58FB0CDA-5935-4167-BFC3-A7292BBC2973}|Test\\Test.csproj|c:\\users\\farsh\\desktop\\git\\studentregistration\\test\\unittests\\studenttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58FB0CDA-5935-4167-BFC3-A7292BBC2973}|Test\\Test.csproj|solutionrelative:test\\unittests\\studenttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE48E04E-F466-40DE-99CC-8E8E917B64CC}|DatatAccess\\DatatAccess.csproj|c:\\users\\farsh\\desktop\\git\\studentregistration\\datataccess\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE48E04E-F466-40DE-99CC-8E8E917B64CC}|DatatAccess\\DatatAccess.csproj|solutionrelative:datataccess\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE48E04E-F466-40DE-99CC-8E8E917B64CC}|DatatAccess\\DatatAccess.csproj|c:\\users\\farsh\\desktop\\git\\studentregistration\\datataccess\\datataccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AE48E04E-F466-40DE-99CC-8E8E917B64CC}|DatatAccess\\DatatAccess.csproj|solutionrelative:datataccess\\datataccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\farsh\\Desktop\\Git\\StudentRegistration\\Service\\Service\\StudentService.cs",
+              "RelativeDocumentMoniker": "Service\\Service\\StudentService.cs",
+              "ToolTip": "C:\\Users\\farsh\\Desktop\\Git\\StudentRegistration\\Service\\Service\\StudentService.cs",
+              "RelativeToolTip": "Service\\Service\\StudentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T03:33:46.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentTests.cs",
+              "DocumentMoniker": "C:\\Users\\farsh\\Desktop\\Git\\StudentRegistration\\Test\\UnitTests\\StudentTests.cs",
+              "RelativeDocumentMoniker": "Test\\UnitTests\\StudentTests.cs",
+              "ToolTip": "C:\\Users\\farsh\\Desktop\\Git\\StudentRegistration\\Test\\UnitTests\\StudentTests.cs",
+              "RelativeToolTip": "Test\\UnitTests\\StudentTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T02:18:11.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\farsh\\Desktop\\Git\\StudentRegistration\\DatatAccess\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "DatatAccess\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\farsh\\Desktop\\Git\\StudentRegistration\\DatatAccess\\Models\\Student.cs",
+              "RelativeToolTip": "DatatAccess\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T02:18:25.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DatatAccess",
+              "DocumentMoniker": "C:\\Users\\farsh\\Desktop\\Git\\StudentRegistration\\DatatAccess\\DatatAccess.csproj",
+              "RelativeDocumentMoniker": "DatatAccess\\DatatAccess.csproj",
+              "ToolTip": "C:\\Users\\farsh\\Desktop\\Git\\StudentRegistration\\DatatAccess\\DatatAccess.csproj",
+              "RelativeToolTip": "DatatAccess\\DatatAccess.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-18T03:34:39.609Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
