@@ -1,8 +1,9 @@
 ﻿// Service/Service/StudentService.cs
+using DataAccess.Interface;
 using DataAccess.Models;
 using DataAccess.Repository;
-using DataAccess.Interface;
 using Service.Interface;
+using System.Collections.Generic;
 
 namespace Service.Service
 {
@@ -17,11 +18,28 @@ namespace Service.Service
 
         public void RegisterStudent(string firstName, string lastName, string nationalCode, int birthYear)
         {
-            // ایجاد شیء دانشجو
             var student = new Student(firstName, lastName, nationalCode, birthYear);
-
-            // ثبت دانشجو در دیتابیس
             _studentRepository.Add(student);
+        }
+
+        public Student GetStudentById(int id)
+        {
+            return _studentRepository.GetById(id);
+        }
+
+        public IEnumerable<Student> GetAllStudents()
+        {
+            return _studentRepository.GetAll();
+        }
+
+        public void UpdateStudent(Student student)
+        {
+            _studentRepository.Update(student);
+        }
+
+        public void DeleteStudent(int id)
+        {
+            _studentRepository.Delete(id);
         }
     }
 }

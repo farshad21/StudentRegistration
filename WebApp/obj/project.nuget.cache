@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "SlUe3IebqlA=",
+  "dgSpecHash": "FaTDHiHQfHQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\farsh\\Desktop\\Git\\StudentRegistration\\WebApp\\WebApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\farsh\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512"
+  ],
   "logs": []
 }
