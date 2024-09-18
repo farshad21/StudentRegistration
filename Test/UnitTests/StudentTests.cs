@@ -42,6 +42,7 @@ namespace Test.UnitTests
             Assert.NotEqual(firstCode, secondCode);
             Assert.Equal(10, firstCode.Length);
             Assert.Equal(10, secondCode.Length);
+        }
 
             private static HashSet<string> GeneratedCodes = new HashSet<string>();
 
@@ -58,7 +59,18 @@ namespace Test.UnitTests
             return code;
         }
 
+        [Theory]
+        [InlineData("", "Ahmadi", "1234567890", 1995)]
+        [InlineData("Ali", "", "1234567890", 1995)]
+        [InlineData("Ali", "Ahmadi", "", 1995)]
+        public void CreateStudent_WithInvalidData_ShouldThrowArgumentException(string firstName, string lastName, string nationalCode, int birthYear)
+        {
+            // Arrange & Act & Assert
+            Assert.Throws<ArgumentException>(() => new Student(firstName, lastName, nationalCode, birthYear));
+        }
+
+
     }
 
 }
-}
+
