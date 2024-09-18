@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ZoQgg218//U=",
+  "dgSpecHash": "g4n8jU2h0qg=",
   "success": true,
   "projectFilePath": "C:\\Users\\farsh\\Desktop\\Git\\StudentRegistration\\DatatAccess\\DatatAccess.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\farsh\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512"
+  ],
   "logs": []
 }
