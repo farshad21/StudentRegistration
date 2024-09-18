@@ -10,6 +10,11 @@
 
         public Student(string firstName, string lastName, string nationalCode, int birthYear)
         {
+            if (string.IsNullOrWhiteSpace(firstName)) throw new ArgumentException("First name is required.");
+            if (string.IsNullOrWhiteSpace(lastName)) throw new ArgumentException("Last name is required.");
+            if (string.IsNullOrWhiteSpace(nationalCode)) throw new ArgumentException("National code is required.");
+            if (birthYear <= 0) throw new ArgumentException("Birth year must be greater than zero.");
+
             FirstName = firstName;
             LastName = lastName;
             NationalCode = nationalCode;
@@ -17,11 +22,9 @@
             StudentCode = GenerateStudentCode();
         }
 
-        private string GenerateStudentCode()
+        private string? GenerateStudentCode()
         {
-            // اینجا باید کدی بنویسیم که یک کد دانشجویی یونیک ۱۰ رقمی تولید کند.
-            // برای سادگی فعلاً یک کد ثابت برمی‌گردانیم.
-            return "1234567890";
+            throw new NotImplementedException();
         }
     }
 }

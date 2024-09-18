@@ -46,6 +46,12 @@ namespace Test.UnitTests
 
             private static HashSet<string> GeneratedCodes = new HashSet<string>();
 
+        public string FirstName { get; }
+        public string LastName { get; }
+        public string NationalCode { get; }
+        public int BirthYear { get; }
+        public string StudentCode { get; }
+
         private string GenerateStudentCode()
         {
             string code;
@@ -68,8 +74,6 @@ namespace Test.UnitTests
             // Arrange & Act & Assert
             Assert.Throws<ArgumentException>(() => new Student(firstName, lastName, nationalCode, birthYear));
         }
-
-
     }
 
 }
