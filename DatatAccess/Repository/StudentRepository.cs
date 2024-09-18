@@ -3,52 +3,68 @@ using Dapper;
 using DataAccess.Models;
 using System.Data;
 using DataAccess.Interface;
+using DataAccess.DataContext;
 using System.Collections.Generic;
 
-namespace DataAccess.Repository
+namespace DataAccess.Repositories
 {
     public class StudentRepository : IStudentRepository
     {
-        private readonly IDbConnection _dbConnection;
+        private readonly DapperDbContext _context;
 
-        public StudentRepository(IDbConnection dbConnection)
+        public StudentRepository(DapperDbContext context)
         {
-            _dbConnection = dbConnection;
+            _context = context;
         }
 
         public void Add(Student student)
         {
-            var sql = "INSERT INTO Students (FirstName, LastName, NationalCode, BirthYear, StudentCode) " +
-                      "VALUES (@FirstName, @LastName, @NationalCode, @BirthYear, @StudentCode)";
+            using (IDbConnection dbConnection = _context.CreateConnection())
+            {
+                var sql = "INSERT INTO Students (FirstName, LastName, NationalCode, BirthYear, StudentCode) " +
+                          "VALUES (@FirstName, @LastName, @NationalCode, @BirthYear, @StudentCode)";
 
-            _dbConnection.Execute(sql, student);
+                dbConnection.Execute(sql, student);
+            }
         }
 
         public Student GetById(int id)
         {
-            var sql = "SELECT * FROM Students WHERE Id = @Id";
-            return _dbConnection.QuerySingleOrDefault<Student>(sql, new { Id = id });
+            using (IDbConnection dbConnection = _context.CreateConnection())
+            {
+                var sql = "SELECT * FROM Students WHERE Id = @Id";
+                return dbConnection.QuerySingleOrDefault<Student>(sql, new { Id = id });
+            }
         }
 
         public IEnumerable<Student> GetAll()
         {
-            var sql = "SELECT * FROM Students";
-            return _dbConnection.Query<Student>(sql);
+            using (IDbConnection dbConnection = _context.CreateConnection())
+            {
+                var sql = "SELECT * FROM Students";
+                return dbConnection.Query<Student>(sql);
+            }
         }
 
         public void Update(Student student)
         {
-            var sql = "UPDATE Students SET FirstName = @FirstName, LastName = @LastName, " +
-                      "NationalCode = @NationalCode, BirthYear = @BirthYear, StudentCode = @StudentCode " +
-                      "WHERE Id = @Id";
+            using (IDbConnection dbConnection = _context.CreateConnection())
+            {
+                var sql = "UPDATE Students SET FirstName = @FirstName, LastName = @LastName, " +
+                          "NationalCode = @NationalCode, BirthYear = @BirthYear, StudentCode = @StudentCode " +
+                          "WHERE Id = @Id";
 
-            _dbConnection.Execute(sql, student);
+                dbConnection.Execute(sql, student);
+            }
         }
 
         public void Delete(int id)
         {
-            var sql = "DELETE FROM Students WHERE Id = @Id";
-            _dbConnection.Execute(sql, new { Id = id });
+            using (IDbConnection dbConnection = _context.CreateConnection())
+            {
+                var sql = "DELETE FROM Students WHERE Id = @Id";
+                dbConnection.Execute(sql, new { Id = id });
+            }
         }
     }
 }

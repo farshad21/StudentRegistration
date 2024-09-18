@@ -1,7 +1,6 @@
 ﻿// Service/Service/StudentService.cs
 using DataAccess.Interface;
 using DataAccess.Models;
-using DataAccess.Repository;
 using Service.Interface;
 using System.Collections.Generic;
 
