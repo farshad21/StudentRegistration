@@ -1,32 +1,39 @@
+// WebApp/Controllers/StudentsController.cs
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
-using WebApp.Models;
+using DataAccess.Models;
+using Service.Interface;
 
-namespace WebApp.Controllers
+public class StudentsController : Controller
 {
-    public class HomeController : Controller
+    private readonly IStudentService _studentService;
+
+    public StudentsController(IStudentService studentService)
     {
-        private readonly ILogger<HomeController> _logger;
+        _studentService = studentService;
+    }
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
+    // Action to show the student registration form
+    [HttpGet]
+    public IActionResult Create()
+    {
+        return View();
+    }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+    // Action to handle the form submission
+    [HttpPost]
+    public IActionResult Create(Student student)
+    {
+        if (!ModelState.IsValid)
+            return View(student);
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+        _studentService.RegisterStudent(student.FirstName, student.LastName, student.NationalCode, student.BirthYear);
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        return RedirectToAction("Success");
+    }
+
+    // Action to show success page after registration
+    public IActionResult Success()
+    {
+        return View();
     }
 }
