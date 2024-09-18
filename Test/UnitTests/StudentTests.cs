@@ -26,5 +26,23 @@ namespace Test.UnitTests
             Assert.NotNull(student.StudentCode);
             Assert.Equal(10, student.StudentCode.Length);
         }
+
+        [Fact]
+        public void GenerateStudentCode_ShouldBeUnique()
+        {
+            // Arrange
+            var firstStudent = new Student("Ali", "Ahmadi", "1234567890", 1995);
+            var secondStudent = new Student("Reza", "Mohammadi", "0987654321", 1996);
+
+            // Act
+            var firstCode = firstStudent.StudentCode;
+            var secondCode = secondStudent.StudentCode;
+
+            // Assert
+            Assert.NotEqual(firstCode, secondCode);
+            Assert.Equal(10, firstCode.Length);
+            Assert.Equal(10, secondCode.Length);
+        }
+
     }
 }
