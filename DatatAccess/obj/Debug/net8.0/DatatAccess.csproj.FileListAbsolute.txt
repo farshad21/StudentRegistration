@@ -10,3 +10,4 @@ C:\Users\farsh\Desktop\Git\StudentRegistration\DatatAccess\obj\Debug\net8.0\Data
 C:\Users\farsh\Desktop\Git\StudentRegistration\DatatAccess\obj\Debug\net8.0\refint\DatatAccess.dll
 C:\Users\farsh\Desktop\Git\StudentRegistration\DatatAccess\obj\Debug\net8.0\DatatAccess.pdb
 C:\Users\farsh\Desktop\Git\StudentRegistration\DatatAccess\obj\Debug\net8.0\ref\DatatAccess.dll
+C:\Users\farsh\Desktop\Git\StudentRegistration\DatatAccess\obj\Debug\net8.0\DatatAccess.csproj.AssemblyReference.cache

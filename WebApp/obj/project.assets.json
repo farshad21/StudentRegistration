@@ -2831,6 +2831,8 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Dapper >= 2.1.35",
+      "Microsoft.Extensions.DependencyInjection >= 8.0.0",
       "Service >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.7.3"
     ]
@@ -2889,6 +2891,14 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[2.1.35, )"
+          },
+          "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.7.3, )"
