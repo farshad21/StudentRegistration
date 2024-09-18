@@ -1,0 +1,12 @@
+C:\Users\farsh\Desktop\Git\StudentRegistration\DatatAccess\bin\Debug\net8.0\DatatAccess.deps.json
+C:\Users\farsh\Desktop\Git\StudentRegistration\DatatAccess\bin\Debug\net8.0\DatatAccess.dll
+C:\Users\farsh\Desktop\Git\StudentRegistration\DatatAccess\bin\Debug\net8.0\DatatAccess.pdb
+C:\Users\farsh\Desktop\Git\StudentRegistration\DatatAccess\obj\Debug\net8.0\DatatAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\farsh\Desktop\Git\StudentRegistration\DatatAccess\obj\Debug\net8.0\DatatAccess.AssemblyInfoInputs.cache
+C:\Users\farsh\Desktop\Git\StudentRegistration\DatatAccess\obj\Debug\net8.0\DatatAccess.AssemblyInfo.cs
+C:\Users\farsh\Desktop\Git\StudentRegistration\DatatAccess\obj\Debug\net8.0\DatatAccess.csproj.CoreCompileInputs.cache
+C:\Users\farsh\Desktop\Git\StudentRegistration\DatatAccess\obj\Debug\net8.0\DatatAccess.sourcelink.json
+C:\Users\farsh\Desktop\Git\StudentRegistration\DatatAccess\obj\Debug\net8.0\DatatAccess.dll
+C:\Users\farsh\Desktop\Git\StudentRegistration\DatatAccess\obj\Debug\net8.0\refint\DatatAccess.dll
+C:\Users\farsh\Desktop\Git\StudentRegistration\DatatAccess\obj\Debug\net8.0\DatatAccess.pdb
+C:\Users\farsh\Desktop\Git\StudentRegistration\DatatAccess\obj\Debug\net8.0\ref\DatatAccess.dll
